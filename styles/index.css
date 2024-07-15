@@ -1,24 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Work Sans", sans-serif;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+html {
+  font-size: 62.5%;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 li {
-    list-style: none;
+  list-style: none;
 }
-button, input {
-    border: none;
+button,
+input {
+  border: none;
 }
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* header styling */
+header {
+  background: rgba(255, 144, 14, 0.1);
+  padding: 5rem 0 4rem 0;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.nav-list {
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+.nav-item > a {
+  color: rgb(66, 66, 66);
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.banner-section {
+  max-width: 1440px;
+  margin: 10rem auto 0 auto;
+  
+}
+.hero-header {
+  color: rgb(19, 19, 19);
+
+  font-size: 6rem;
+  line-height: 1.5em;
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner-paragraph {
+  max-width: 860px;
+  margin: 0 auto 3rem auto;
+}
+.banner-img {
+  margin-top: 5rem;
+}
+.banner-btn {
+  margin: 0 auto;
+  display: block;
+
+  
 }
