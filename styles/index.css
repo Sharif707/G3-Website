@@ -61,6 +61,11 @@ img {
 .primary-paragraph {
   margin: 24px 0 32px 0;
 }
+
+.dark-3 {
+  color: rgb(114, 114, 114);
+  font-size: 2rem;
+}
 /* shared styling ends here */
 
 /* header styling */
@@ -147,7 +152,6 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 30px;
-
 }
 .card-container {
   margin-top: 30px;
@@ -171,42 +175,31 @@ main {
 .feature-img {
   position: relative;
   border: 2px solid rgb(21, 255, 0);
-  
 }
-.discount-box{
+.discount-box {
   position: absolute;
   background-color: rgb(255, 144, 14);
   border-radius: 8px;
   padding: 45px 40px;
 
-left: -100px;
-bottom: -50px;
-
-
-
-
-
-
+  left: -100px;
+  bottom: -50px;
 }
 .discount-box > h1 {
   font-size: 6.5rem;
   color: white;
-  
 }
 
 .positoned-element {
   position: relative;
-  
 }
-.vertical-scale{
+.vertical-scale {
   position: absolute;
   width: 5px;
   height: 100%;
   background-color: rgb(255, 144, 14);
   top: 0;
   left: -20px;
-
-
 }
 /* feature section ends heree */
 
@@ -288,5 +281,27 @@ bottom: -50px;
   .primary-button {
     display: block;
     margin: 0 auto;
+  }
+}
+
+
+/* media queries for feature section */
+
+@media screen and (max-width: 1024px) {
+  .feature-section {
+   flex-direction: column;
+    gap: 3rem;
+  
+  }
+  .vertical-scale {
+    display: none;
+  }
+  .positoned-element {
+    position: static;
+    text-align: center;
+  }
+  .discount-box {
+    position: static;
+    display: none;
   }
 }
