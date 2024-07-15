@@ -25,7 +25,6 @@ img {
   height: auto;
 }
 
-
 /* shared styling */
 
 .small-paragraph {
@@ -59,8 +58,10 @@ img {
 .flex-display {
   display: flex;
 }
+.primary-paragraph {
+  margin: 24px 0 32px 0;
+}
 /* shared styling ends here */
-
 
 /* header styling */
 header {
@@ -111,8 +112,37 @@ header {
   display: block;
 }
 
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.team-section {
+  display: flex;
+  gap: 7rem;
+  align-items: center;
+  justify-content: center;
+  margin: 85px 0 130px 0;
+  border: 2px solid red;
+}
+
+.image-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+}
+.content-section {
+  flex: 0 1 510px;
+}
+.content-header {
+  font-weight: 400;
+}
+.content-section > p {
+  text-align: left;
+}
+
+/* media queries for header */
 @media screen and (max-width: 576px) {
-  .flex-display {
+  .navbar {
     flex-direction: column;
   }
   .secondary-header {
@@ -143,5 +173,50 @@ header {
   }
   .hero-header {
     font-size: 4.8rem;
+  }
+}
+
+/* media queries for team section */
+
+@media screen and (max-width: 992px) {
+  .content-section > h3 {
+    font-size: 4rem;
+  }
+  .image-section {
+    gap: 1.8rem;
+  }
+  .team-section {
+    gap: 5rem;
+
+    margin: 50px 0 90px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content-section > h3 {
+    font-size: 3.3rem;
+    text-align: center;
+  }
+  .image-section {
+    gap: 1.5rem;
+  }
+
+  .primary-paragraph {
+    margin: 15px 0 22px 0;
+  }
+  .small-paragraph {
+    font-size: 1.6rem;
+    line-height: 1.3em;
+  }
+  .team-section {
+    flex-direction: column;
+
+    margin: 40px 0 75px 0;
+  }
+  .content-section {
+    border: 2px solid yellowgreen;
+  }
+  .primary-button {
+    display: block;
+    margin: 0 auto;
   }
 }
