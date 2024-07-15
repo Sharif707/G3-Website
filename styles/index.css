@@ -127,7 +127,7 @@ main {
   align-items: center;
   justify-content: center;
   margin: 85px 0 130px 0;
-  border: 2px solid red;
+
 }
 
 .image-section {
@@ -147,11 +147,12 @@ main {
 
 /* feature section starts heree */
 .feature-section {
-  border: 2px solid red;
+ 
   gap: 5rem;
   justify-content: space-between;
   align-items: center;
   padding: 30px;
+  margin-bottom: 85px;
 }
 .card-container {
   margin-top: 30px;
@@ -174,7 +175,7 @@ main {
 
 .feature-img {
   position: relative;
-  border: 2px solid rgb(21, 255, 0);
+  
 }
 .discount-box {
   position: absolute;
@@ -202,6 +203,32 @@ main {
   left: -20px;
 }
 /* feature section ends heree */
+
+/* fact section starts here */
+.fact-container{
+  display: grid;
+  grid-template-columns: repeat(4, 340px);
+  gap: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+.fact-header {
+  max-width: 550px;
+}
+.fact-card {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 55px;
+
+border: 1px solid rgb(255, 144, 14);
+border-radius: 8px;
+
+}
+.fact-card > h3 {
+  margin: 8px 0;
+  text-align: center;
+}
 
 /* media queries for header */
 @media screen and (max-width: 576px) {
