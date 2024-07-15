@@ -5,9 +5,7 @@
   .secondary-header {
     font-size: 3rem;
   }
-  .nav-list {
-    gap: 1rem;
-  }
+ 
   .hero-header {
     font-size: 4.2rem;
   }
@@ -22,4 +20,16 @@
     font-weight: 600;
     font-size: 1.8rem;
   }
+}
+
+@media screen and (max-width: 768px){
+    .navbar{
+        padding: 0 2rem;
+    }
+    .nav-list {
+        gap: 1rem;
+      }
+      .hero-header {
+        font-size: 4.8rem;
+      }
 }
