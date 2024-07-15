@@ -1,0 +1,25 @@
+@media screen and (max-width: 576px) {
+  .flex-display {
+    flex-direction: column;
+  }
+  .secondary-header {
+    font-size: 3rem;
+  }
+  .nav-list {
+    gap: 1rem;
+  }
+  .hero-header {
+    font-size: 4.2rem;
+  }
+  .small-paragraph {
+    font-size: 1.4rem;
+
+    line-height: 1.5em;
+  }
+  .primary-button {
+    padding: 1.4rem 1.6rem;
+
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+}
