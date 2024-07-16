@@ -230,6 +230,31 @@ border-radius: 8px;
   text-align: center;
 }
 
+
+/* sponsored section */
+
+.sponsor-section{
+  margin-top: 150px;
+  text-align: center;
+
+}
+.sponsor-section > p {
+  max-width: 540px;
+  margin: 0 auto;
+}
+.sponsored-brands{
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+gap: 10rem;
+ justify-content: space-between;
+ margin-top: 60px;
+
+  
+}
+
+
+
+
 /* media queries for header */
 @media screen and (max-width: 576px) {
   .navbar {
@@ -331,4 +356,43 @@ border-radius: 8px;
     position: static;
     display: none;
   }
+}
+
+/* media queries for fact section */
+
+@media screen and (max-width: 1200px){
+  .fact-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+ 
+}
+@media screen and (max-width: 768px){
+  .fact-container {
+    gap: 5rem;
+  }
+.fact-card > h3 {
+  font-size: 3.2rem;
+
+}
+ 
+}
+@media screen and (max-width: 576px){
+  .fact-section{
+    padding: 30px;
+  }
+  .fact-container {
+   grid-template-columns: 1fr;
+    gap: 3rem;
+   
+  }
+
+ 
+}
+
+@media screen and (max-width: 992px) {
+  .sponsored-brands {
+    gap: 6rem;
+    padding: 20px;
+  }
+  
 }
